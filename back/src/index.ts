@@ -1,7 +1,7 @@
 console.log('Try npm run lint/fix!');
 
 const longString =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut aliquet diam.';
+  'Lorem ipsum dolor sit amet, consectetur adip iscing elit. Integer ut aliquet diam.';
 
 const trailing = 'Semicolon';
 
