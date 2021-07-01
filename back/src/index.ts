@@ -1,24 +1,4 @@
-console.log('Try npm run lint/fix!');
+import fs from 'fs';
 
-const longString =
-  'Lorem ipsum dolor sit amet, consectetur adip iscing elit. Integer ut aliquet diam.';
-
-const trailing = 'Semicolon';
-
-const why = 'am I tabbed?';
-
-export function doSomeStuff(
-  withThis: string,
-  andThat: string,
-  andThose: string[]
-) {
-  //function on one line
-  if (!andThose.length) {
-    return false;
-  }
-  console.log(withThis);
-  console.log(andThat);
-  console.dir(andThose);
-  return;
-}
-// TODO: more examples
+const list = fs.readdirSync('.');
+console.log('list: ', list);
