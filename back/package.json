@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "version": "0.0.0",
+  "name": "back",
+  "version": "0.0.1",
   "description": "",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
