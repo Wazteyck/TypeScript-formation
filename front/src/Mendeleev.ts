@@ -20,6 +20,10 @@ export class Mendeleev {
     }*/
     console.log("div: ", div);
 
-    div.innerHTML = "toto";
+    const selection = d3.select(div).selectAll("div").data(csv);
+    selection
+      .enter()
+      .append("div")
+      .text((d) => (d as any).Symbol);
   }
 }
