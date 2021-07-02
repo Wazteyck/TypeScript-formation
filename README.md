@@ -15,13 +15,18 @@ Open a command line tool (cmd).
 ```
 git clone https://github.com/jlg-formation/tsr-juillet-2021.git
 cd tsr-juillet-2021
-cd back
-npm i
 cd ..
 cd front
-npx webpack
-cd ..
+npm i
+npm start
+```
+
+Open a second command line tool.
+
+```
+cd 'folder'
 cd back
+npm i
 npm start
 ```
 
