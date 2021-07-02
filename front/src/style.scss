@@ -14,7 +14,7 @@ div.tableau {
 
     border-radius: 0.5em;
     background: lightyellow;
-    box-shadow: 10px 10px 22px #adadad, -10px -10px 22px #ffffff;
+    box-shadow: 10px 10px 22px #adadad;
 
     display: flex;
     align-items: center;
@@ -28,6 +28,10 @@ div.tableau {
     }
     &:active {
       background-color: black;
+    }
+    &.selected {
+      background-color: chocolate;
+      color: white;
     }
   }
 }

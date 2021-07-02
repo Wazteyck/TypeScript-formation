@@ -40,4 +40,12 @@ module.exports = {
       patterns: [{ from: "src/assets", to: "assets" }],
     }),
   ],
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 6900,
+    proxy: {
+      "/atomes.csv": "http://localhost:3000",
+    },
+  },
 };
