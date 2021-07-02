@@ -10,11 +10,12 @@ export class Mendeleev {
     console.log("csv: ", csv);
 
     // plug csv into html
-    const div = document.querySelector("div.tableau");
+    const div = document.querySelector("div.tableau") as Element;
 
-    if (!div) {
+    // Optionnel if 'as Element'
+    /*if (!div) {
       throw new Error("div is null");
-    }
+    }*/
     console.log("div: ", div);
 
     div.innerHTML = "toto";
