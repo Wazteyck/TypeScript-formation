@@ -30,10 +30,10 @@ export class Mendeleev {
       .enter()
       .append("div")
       .style("transform", (d) => {
-        const x = d.Group * 3;
-        const y = d.Period * 3;
+        const x = d.Group * (3 + 0.4);
+        const y = d.Period * (3 + 0.4);
         return `translate(${x}em, ${y}em)`;
       })
-      .text((d) => d.Symbol + "\n" + d.NumberofNeutrons);
+      .text((d) => d.Symbol);
   }
 }

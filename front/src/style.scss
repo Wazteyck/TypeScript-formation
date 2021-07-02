@@ -1,13 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
 div.tableau {
-    position: relative;
-    background-color: #eee;
-    height: 25em;
-    width: 60em;
-    div {
-        position: absolute;
-        border: 0.1em solid cadetblue;
-        height: 3em;
-        width: 3em;
-        text-align: center;
-    }
+  position: relative;
+  height: 25em;
+  width: 60em;
+  div {
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    text-align: center;
+
+    border-radius: 0.5em;
+    background: lightyellow;
+    box-shadow: 10px 10px 22px #adadad, -10px -10px 22px #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #666;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 0.8em;
+  color: lightgray;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
