@@ -11,6 +11,7 @@
   "keywords": [],
   "scripts": {
     "start": "npx nodemon src/index.ts",
+    "start:prod": "node build/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "gts lint",
     "clean": "gts clean",

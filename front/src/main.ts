@@ -9,5 +9,3 @@ console.log("toto: ", toto);
 
 const mendeleev = new Mendeleev();
 console.log("mendeleev: ", mendeleev);
-
-mendeleev.init();

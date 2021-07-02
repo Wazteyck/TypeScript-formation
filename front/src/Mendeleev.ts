@@ -1,11 +1,14 @@
 import * as d3 from "d3";
+import { Logging } from "./decorators/Logging";
 import { ChemicalElt } from "./interfaces/ChemicalElt";
 
 import "./style.scss";
 
+@Logging
 export class Mendeleev {
   constructor() {
     console.log("instantiate Mendeleev");
+    this.init();
   }
 
   async init() {
@@ -43,6 +46,10 @@ export class Mendeleev {
         const endTranslateState = `translate(${x}em, ${y}em)`;
         return d3.interpolateString(startTranslateState, endTranslateState);
       });
+
+    setTimeout(() => {
+      this.updateDetails(data[Math.floor(Math.random() * data.length)]);
+    }, 500);
   }
 
   updateDetails(d: ChemicalElt): void {
