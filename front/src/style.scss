@@ -42,3 +42,38 @@ footer {
     color: black;
   }
 }
+
+div.details {
+  position: absolute;
+  top: 10em;
+  left: 22em;
+  border-radius: 00.5em;
+  box-shadow: 2px 2px 4px #adadad, -2px -2px 4px #ffffff;
+  border: 0.1em solid #eee;
+  width: 10em;
+  height: 10em;
+  display: flex;
+  justify-content: space-between;
+
+  .symbol {
+    position: absolute;
+    font-size: 5em;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .name {
+    position: absolute;
+    font-size: 1.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 120%);
+  }
+
+  .atomicNbr,
+  .atomicMass {
+    padding: 0.5em;
+  }
+}
