@@ -1,6 +1,8 @@
 div.tableau {
+    position: relative;
     div {
-        border: 0.1em solid black;
+        position: absolute;
+        border: 0.1em solid cadetblue;
         height: 3em;
         width: 3em;
         text-align: center;

@@ -24,6 +24,11 @@ export class Mendeleev {
     selection
       .enter()
       .append("div")
+      .style("transform", (d) => {
+        const x = (d as any).Group * 3;
+        const y = (d as any).Period * 3;
+        return `translate(${x}em, ${y}em)`;
+      })
       .text((d) => (d as any).Symbol);
   }
 }
