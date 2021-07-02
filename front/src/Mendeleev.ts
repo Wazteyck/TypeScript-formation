@@ -1,5 +1,7 @@
 import * as d3 from "d3";
 
+import "./style.scss";
+
 export class Mendeleev {
   constructor() {
     console.log("instantiate Mendeleev");

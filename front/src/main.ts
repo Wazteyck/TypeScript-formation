@@ -1,3 +1,5 @@
+import "./style.scss";
+
 import { Mendeleev } from "./Mendeleev";
 
 console.log("Start the ts !");
