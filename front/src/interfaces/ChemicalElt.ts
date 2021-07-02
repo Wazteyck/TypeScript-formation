@@ -1,6 +1,8 @@
 export interface ChemicalElt {
+  Element: string;
   Symbol: string;
   Period: number;
   Group: number;
-  NumberofNeutrons: number;
+  AtomicNumber: number;
+  AtomicMass: number;
 }
